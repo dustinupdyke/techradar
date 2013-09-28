@@ -6,14 +6,15 @@
 <script type="text/javascript" src="lib/protovis-3.2/protovis-d3.2.js"></script>
 <script type="text/javascript" charset="utf-8" src="utils.js"></script>
 <script type="text/javascript" charset="utf-8" src="radars/radarData.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css' />
 
 <style type="text/css" media="screen">
-  
-#fig {
-  height: 1000px;
-  width: 1200px;
-}
-
+body {background:url('bg.jpg')}
+* {font-family: 'Noto Sans', sans-serif;}
+#fig {height: 1000px;width: 1200px;}
+#menu {padding:10px 24px; background:goldenrod;margin:20px 20px 40px 20px;}
+#menu h1 {padding:0;margin:0;font-family: 'Covered By Your Grace', cursive;font-size:1.6em;}
 </style>
 <script type="text/javascript" src="radar.js" charset="utf-8"></script>
 <script type="text/javascript" charset="utf-8">
@@ -23,7 +24,9 @@
 </head>
 
 <body onload="init(h,w);">
-<h1 id="title" style="text-align: center;"></h1>
+<div id="menu">
+<h1 id="title"></h1>
+</div>
 <div id="radar"></div>
 </body>
 </html>
